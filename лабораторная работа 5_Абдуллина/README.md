@@ -37,3 +37,11 @@
 ## Тесты
     pytest -q
     python run_self_tests.py
+## Лабораторная 5.1 — расширение
+### Модуль `deque_average.py`
+Реализация SMA / центрированного MA / EMA через `collections.deque`.
+Сравнение с «индексной» версией в `moving_average.py`.
+
+### Замер производительности SMA
+```bash
+python main.py --kind random --n 5000 --window 20 --benchmark
